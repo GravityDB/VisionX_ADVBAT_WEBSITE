@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVBAT docs</title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@500&family=Ubuntu&display=swap');
+        </style>
+</head>
+<body style="font-family: Quicksand;" class="text-white flex flex-col">
+    <div class="bg-gray-900 flex w-full justify-between">
+        <h1 class="text-white text-4xl p-4">ADVBAT DOCS
+            <span class="text-2xl">
+                v2021.1
+            </span>
+        </h1>
+        <img id="THE_MENU" src="menu.svg" class="m-4 h-10 lg:invisible">
+    </div>
+
+    <div class="flex flex-col lg:flex-row" style="scroll-behavior: smooth">
+
+        <div id="$APX_ANLUA" class="lg:h-screen h-32 overflow-auto text-2xl pt-4 pb-4 lg:w-1/3 bg-gray-600 hidden lg:block">
+            <a class="pl-4">Welcome to ADVBAT Docs!</a><br>
+            <a class="pl-4" href="#SECTION: WHY USE ADVBAT">Why use ADVBAT?</a><br>
+            <a class="pl-4">Installing ADVBAT</a><br>
+            <br>
+            <a class="pl-4">Syntax of ADVBAT</a>
+        </div>
+
+        <div class="h-screen w-full p-8 bg-gray-800 overflow-auto">
+            <h1 class="text-6xl flex">
+                Welcome to ADVBAT Docs!
+            </h1><br><br>
+            <h1 class="text-2xl">
+                Welcome to ADVBAT Documentation! This documentation, like any other Documentation out there, explains the working of ADVBAT, it's usage and installation with interactive videos and code snippet, with no corner left to be explored. Our documentation tries to be as simple and lucid as possible, but there can be some areas where you need some beforehand knowledge of some specific topics. I'm Listing some points below
+                <br><br>
+                <ul>
+                    <li>- Experience of Windows Command Line</li>
+                    <li>- Experience with windows Batch File</li>
+                    <li>- Previous basic knowledge of any programming language</li>
+                </ul>
+            </h1> <br><br>
+
+            <h1 id="SECTION: WHY USE ADVBAT" class="text-6xl flex">
+                Why use ADVBAT?
+            </h1><br><br>
+            <h1 class="text-2xl">
+                ADVBAT is an external tool or framework that is capable of defining new language constructs, like Classes, Objects, Functions, Modularity and more. ADVBAT is also compatibale with other plugins and frameworks, like batbox and many others. Some Key features of ADVBAT is mentioned below
+                <br><br>
+                <ul>
+                    <li>- Modularity</li>
+                    <li>- Variables and Direct Access Memory</li>
+                    <li>- Classes, objects, Data Hiding, Encapsulation, Polymorphism, abstraction and Dynamically linked library</li>
+                    <li>- Asynchronous and Multi-threading</li>
+                    <li>- Shared Memory Applications</li>
+                    <li>- Standard Library</li>
+                    <li>- Package Management</li>
+                </ul>
+
+            </h1>
+            <br><br>
+
+            <h1 id="SECTION: WHY USE ADVBAT" class="text-6xl flex">
+                Installing ADVBAT
+            </h1><br><br>
+            <h1 class="text-2xl">
+                Installing ADVBAT is very Easy! ADVBAT installer is a very simple CLI that has very little to do. It has a folder selector and that's it, nothing more.
+
+                If you have'nt downloaded the package already, do it
+                from here:
+                <br><br>
+                <a class="bg-gray-900 p-4">DOWNLOAD ADVBAT</a>
+                <br><br>
+                The installation installs important files from the web as well, so the user must have enabled the internet before running the setup file. Run the setup file in ADMIN as it will need to update and Access system path variable (Global System Variables)
+            </h1>
+            <!--Some arbitary spacing-->
+           <br><br>
+        </div>
+    </div>
+
+
+
+<script>
+    var toggle = true;
+    var bar = document.getElementById("$APX_ANLUA"); 
+    document.getElementById("THE_MENU").addEventListener("click", function () {
+        if (toggle)
+        {
+            bar.classList.remove("hidden");
+            toggle = false;
+        } else {
+            bar.classList.add("hidden");
+            toggle = true;
+        }
+    });
+
+</script>
+
+</body>
+</html>
